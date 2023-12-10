@@ -1,0 +1,525 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+base
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+* {
+  margin: 0;
+
+  padding: 0;
+}
+
+body {
+  font-size: 100%;
+
+  font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+
+  color: #000000;
+
+  background: url("img/bg_800a.gif") repeat-y scroll center center transparent; /***  幅指定  ***/
+
+  background-color: #f0f0f0;
+}
+
+img,
+a {
+  border: none;
+}
+
+a,
+a:visited {
+  /*	color:#003300;*/
+
+  color: #000000;
+}
+
+a:hover {
+  color: #003300;
+
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0px 0px 1em;
+}
+
+div#pagebase {
+  width: 770px; /***  幅指定  ***/
+
+  margin: 0px auto;
+
+  min-height: 1px;
+}
+
+div#header {
+  width: 770px; /***  幅指定  ***/
+
+  height: 100px;
+
+  margin: 0px auto;
+}
+
+div#logo {
+  width: 320px; /***  幅指定  ***/
+
+  height: 80px;
+
+  margin: 10px 0 10px 0;
+
+  display: block;
+
+  float: left;
+}
+
+#header_right {
+  width: 220px; /***  幅指定  ***/
+
+  float: right;
+
+  display: block;
+
+  margin-top: 70px;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+#header_right a {
+  padding-left: 20px;
+}
+
+div#h_r1 {
+  float: left;
+
+  margin: 0px;
+
+  display: block;
+
+  width: 60px;
+
+  background: url("img/icon.png") no-repeat scroll 0px 45% transparent;
+}
+
+div#h_r2 {
+  float: right;
+
+  margin: 0px;
+
+  display: block;
+
+  width: 150px;
+
+  background: url("img/icon.png") no-repeat scroll 0px 45% transparent;
+}
+
+/*=====================グローバルナビ開始=====================*/
+
+.menu {
+  width: 770px; /***  幅指定  ***/
+
+  background: url("img/menu.png") 0 0 repeat-x;
+
+  font-size: 11px;
+
+  margin-bottom: 5px;
+
+  border-top: solid 1px #f3f3f3;
+}
+
+.menu ul {
+  width: 710px; /***  幅指定  ***/
+
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  padding-left: 7px;
+
+  position: relative;
+}
+
+.menu li {
+  float: left;
+
+  line-height: 45px;
+
+  width: 100px; /***  幅指定  ***/
+
+  list-style-type: none;
+}
+
+.menu li a {
+  display: block;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  background: url("img/menu.png") 0 0 repeat-x;
+
+  font-size: 12px;
+
+  color: #666;
+}
+
+.menu li a:hover {
+  color: #999;
+
+  background: url("img/menu_h.png") 0 0 repeat-x;
+}
+
+/*=====================グローバルナビ終了=====================*/
+
+div#main_w {
+  width: 770px; /***  幅指定  ***/
+
+  margin: 0;
+}
+
+div#main_w midlogo {
+  margin: 0px 0px 10px;
+}
+
+div#main_left {
+  float: left;
+
+  width: 520px; /***  幅指定  ***/
+
+  margin: 0;
+}
+
+div#main_right {
+  float: right;
+
+  width: 244px; /***  幅指定  ***/
+
+  border-left: dotted 1px #ccc;
+}
+
+div#main_right_in {
+  width: 235px;
+
+  float: right;
+}
+
+.clear {
+  clear: both; /*floatの解除、ここがポイント*/
+}
+
+#topic_l {
+  clear: both;
+
+  margin-bottom: 10px;
+
+  width: 490px; /***  幅指定  ***/
+
+  padding: 3px 0 0 23px;
+
+  line-height: 28px;
+
+  border: solid 1px #ccc;
+
+  background: url("img/midashi.png") 0 0 no-repeat;
+}
+
+.topic_l {
+  clear: both;
+
+  margin-bottom: 10px;
+
+  width: 490px; /***  幅指定  ***/
+
+  padding: 3px 0 0 23px;
+
+  line-height: 28px;
+
+  border: solid 1px #ccc;
+
+  background: url("img/midashi.png") 0 0 no-repeat;
+}
+
+#topic_s {
+  margin-bottom: 10px;
+
+  width: 215px; /***  幅指定  ***/
+
+  padding: 2px 0 0 20px;
+
+  line-height: 18px;
+
+  font-size: 12px;
+
+  border: solid 1px #ccc;
+
+  background: url("img/midashi_s.png") 0 0 no-repeat;
+}
+
+#topic_w {
+  clear: both;
+
+  margin-bottom: 10px;
+
+  width: 745px; /***  幅指定  ***/
+
+  padding: 3px 0 0 22px;
+
+  line-height: 28px;
+
+  border: solid 1px #ccc;
+
+  background: url("img/midashi.png") 0 0 no-repeat;
+}
+
+.topic_w {
+  clear: both;
+
+  margin-bottom: 10px;
+
+  width: 745px; /***  幅指定  ***/
+
+  padding: 3px 0 0 22px;
+
+  line-height: 28px;
+
+  border: solid 1px #ccc;
+
+  background: url("img/midashi.png") 0 0 no-repeat;
+}
+
+div#news {
+  width: 515px; /***  幅指定  ***/
+}
+
+dl.news {
+  height: 200px;
+
+  overflow-y: scroll;
+
+  border: solid 1px #ccc;
+
+  margin-bottom: 8px;
+
+  padding: 0 3px 0;
+}
+
+dl dt {
+  clear: left;
+
+  float: left;
+
+  width: 8em;
+
+  font-size: 12px;
+
+  line-height: 1;
+
+  padding: 10px 0.5em;
+}
+
+dl dd {
+  margin-left: 0px;
+
+  padding: 10px 0.5em 10px 9em;
+
+  font-size: 12px;
+
+  line-height: 1;
+
+  background: url("img/bg_line_news.gif") repeat-x scroll 0px 100% transparent;
+}
+
+div#news_old {
+  float: right;
+
+  text-decoration: underline;
+
+  font-size: 12px;
+
+  margin-bottom: 12px;
+}
+
+/*************      index　4ブロック　*********************/
+
+div.block_l {
+  display: block;
+
+  width: 240px;
+
+  height: 175px;
+
+  float: left;
+
+  border: solid 1px #ccc;
+
+  margin-bottom: 10px;
+
+  padding: 5px;
+}
+
+div.block_r {
+  display: block;
+
+  width: 240px;
+
+  height: 175px;
+
+  float: right;
+
+  border: solid 1px #ccc;
+
+  margin: 0 5px 10px 0;
+
+  padding: 5px;
+}
+
+div.inblock {
+  background: url("img/icon.png") no-repeat scroll 0px 45% transparent;
+
+  padding-left: 15px;
+
+  margin-left: 3px;
+}
+
+/*******************　　右メイン（リンクエリア）　　******************/
+
+div.link {
+  float: right;
+
+  text-decoration: underline;
+
+  font-size: 12px;
+}
+
+div#footer {
+  width: 770px; /***  幅指定  ***/
+
+  margin: 10px 0px;
+
+  padding: 10px 0px 0px;
+
+  border-top: 4px solid rgb(98, 197, 225);
+
+  min-height: 1px;
+
+  font-size: 12px;
+}
+
+div#footer .f_left {
+  float: left;
+}
+
+div#footer .f_right {
+  clear: both;
+
+  text-align: center;
+
+  font-size: 12px;
+}
+
+div#footer div.f_right p.copy {
+  text-align: right;
+}
+
+td {
+  line-height: 150%;
+
+  vertical-align: middle;
+
+  padding-top: 3px;
+}
+
+h4 {
+  /*** h4は廃止、div class="h4"を使用　 ***/
+
+  margin-bottom: 10px;
+
+  font-size: 18px;
+
+  width: 100%; /***  幅指定  ***/
+
+  padding: 3px 0 0 0;
+
+  line-height: 28px;
+
+  border-top: solid 1px #ccc;
+
+  border-bottom: solid 1px #ccc;
+}
+
+div .h4 {
+  /*** work ***/
+
+  margin-bottom: 10px;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  width: 100%; /***  幅指定  ***/
+
+  padding: 3px 0 0 0;
+
+  line-height: 28px;
+
+  border-top: solid 1px #ccc;
+
+  border-bottom: solid 1px #ccc;
+}
+
+/*** lightbox ***/
+
+.imagebox img {
+  /***　 imageboxというクラスの要素内の画像の横幅を180pxに指定 ***/
+
+  width: 180px;
+}
+
+.imagebox li {
+  /***　imagebox内のli要素のスタイルを指定　***/
+
+  float: left;
+
+  list-style: none;
+
+  margin: 5px;
+}
+
+.imagebox li:nth-of-type(4n + 1) {
+  /*** imagebox内の1,5,9…番目(=4n+1番目)のli要素のところで改行するように指定,imgなどに対し指定してもなぜか有効でないためliタグでくくってます。　***/
+
+  clear: both;
+}
+
+/*** lightbox ***/
+
+.annual {
+  /*** work,業績詳細 ***/
+
+  margin: 20px;
+
+  font-size: 14px;
+}
+
+img.banner {
+  /*** トップページの関連HPリンクバナー ***/
+
+  width: 235px;
+
+  display: block;
+
+  outline: solid 1px #ccc;
+}
